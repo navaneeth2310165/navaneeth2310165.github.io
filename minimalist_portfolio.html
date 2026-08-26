@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>navaneeth dot html</title>
+    <style>
+        body {
+            font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+            color: #000;
+            background-color: #faffed;
+            margin: 0;
+            padding: 40px 20px;
+            line-height: 1.5;
+            font-size: 16px;
+            letter-spacing: -0.025em;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        header {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-bottom: 40px;
+            text-align: center;
+            width: 100vw;
+            margin-left: calc(-50vw + 50%);
+        }
+
+        h1 {
+            font-size: 50vw; 
+            font-weight: bold;
+            margin: 0;
+            margin-bottom: 5px; 
+            line-height: 0.8; 
+            text-transform: uppercase;
+            letter-spacing: -0.05em;
+            width: 100%;
+            text-align: justify; 
+            text-align-last: justify; 
+            white-space: nowrap; 
+            overflow: hidden; 
+        }
+
+        .separator {
+            display: none;
+        }
+
+        nav {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 30px;
+            font-size: 16px;
+        }
+
+        a {
+            color: #0093ee;
+            text-decoration: underline;
+        }
+        
+        a:visited {
+            color: #8b5e1a;
+        }
+
+        section {
+            margin-bottom: 30px;
+        }
+
+        p {
+            margin-top: 0;
+            margin-bottom: 10px;
+        }
+
+        ul {
+            padding-left: 40px;
+            margin-top: 15px;
+            margin-bottom: 15px;
+        }
+
+        li {
+            margin-bottom: 10px;
+        }
+
+        details {
+            display: inline;
+        }
+
+        summary {
+            display: inline;
+            cursor: pointer;
+            color: #888;
+            font-style: italic; 
+            margin-left: 10px;
+            list-style: none; 
+        }
+        
+        summary::-webkit-details-marker {
+            display: none; 
+        }
+
+        summary:hover {
+            text-decoration: underline;
+        }
+
+        .expanded-content {
+            display: block; 
+            margin-top: 10px;
+            margin-bottom: 20px;
+            margin-left: 0;
+            color: #333;
+            font-size: 15px;
+        }
+        
+        .expanded-content p {
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <header>
+            <h1>NAV.</h1>
+            <br>
+            <br>
+            <nav>
+                <a href="#">Behance</a>
+                <a href="#">Instagram</a>
+                <a href="#">Resume</a>
+                <a href="#">LinkedIn</a>
+                <a href="#">Github</a>
+                <a href="#">Publications</a>
+            </nav>
+        </header>
+
+        <br>
+        <section>
+            <p>HI! I'm Navaneeth Kutty. </p>
+            <p>I am a student and a FPGA enthusiast. I occasionally play table tennis.</p>
+            <p>You can reach me at <a href="mailto:knithu2005@gmail.com">knithu2005@gmail.com</a></p>
+        </section>
+
+        <section>
+            <p>Some things about me:</p>
+            
+            <ul>
+                <li>Born in Kerala. Living in Chennai... </li>
+                <li>Studying Electronics & Communication at <a href="https://www.ssn.edu.in/" target="_blank" rel="noopener noreferrer">SSN</a>, Chennai.</li>
+                <li>Currently at Thinking Machines and NYU, focusing on AI Infrastructure, AI Research and Robotics. Was previously at Meta for 11 years.</li>
+                <li>
+                    Co-founded <a href="#">PyTorch</a>, maintained <a href="#">Torch-7</a> and actively work on open-source.
+                    <details>
+                        <summary>[expand]</summary>
+                        <div class="expanded-content">
+                            <p>This project is the most impactful project that I've been involved in, and now powers most of the world's AI research and product -- with hundreds of companies, research labs and individuals using and maintaining it.</p>
+                            <p>It has significant and tangible real-world impact from self-driving cars to drug discovery. There's more than one bug, when it was uncovered, I couldn't sleep thinking about what the downstream effects could be.</p>
+                        </div>
+                    </details>
+                </li>
+                <li>
+                    Published well-cited AI research in Generating Images and other AI things.
+                    <details>
+                        <summary>[expand]</summary>
+                        <div class="expanded-content">
+                            <p>Some of my most cited work is on Generative Adversarial networks (GANs), where I co-authored three well-cited papers. I gave up on GANs after failing to make them stable training algorithms.</p>
+                        </div>
+                    </details>
+                </li>
+                <li>Working on automating chores at home using robots.</li>
+            </ul>
+        </section>
+
+        <section>
+            <p>Some thoughts and directions:</p>
+            <ul>
+                <li>
+                    I embrace laziness. Automate everything that you dont want to do. I embrace simplicity and reducing paging, even if complexity has upside.
+                </li>
+                <li>
+                    I embrace iterating and incremental ambition. I think products and communities have to be rapidly iterated and evolved to get to a good state.
+                </li>
+            </ul>
+        </section>
+        
+        <section>
+            <p>Home Robots:</p>
+            <ul>
+                <li><a href="#">Robot Utility Models:</a> enable basic tasks at ~90% accuracy without ANY finetuning.</li>
+                <li><a href="#">On Bringing Robots Home:</a> 109 tasks. 10 NYC homes. 81% success rate.</li>
+            </ul>
+        </section>
+    </div>
+
+</body>
+</html>
