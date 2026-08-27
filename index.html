@@ -1,4 +1,3 @@
-```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -130,6 +129,7 @@
             <br>
             <br>
             <nav>
+                <a href="https://www.dropbox.com/scl/fo/tpzmlpu025yexr2cnjgbq/ACP7sztNhn3hXgJQ_CLMT1Q?rlkey=0dyl9j5w34fbsggqt60i3def9&st=u31dd6dj&dl=0" target="_blank" rel="noopener noreferrer">Resume</a>
                 <a href="https://www.behance.net/infernoeditz" target="_blank" rel="noopener noreferrer">Behance</a>
                 <a href="https://www.instagram.com/navxneeth_005" target="_blank" rel="noopener noreferrer">Instagram</a>
                 <a href="https://www.linkedin.com/in/navaneethkutty" target="_blank" rel="noopener noreferrer">LinkedIn</a>
@@ -142,7 +142,7 @@
 
         <section>
             <p>Hi! I'm Navaneeth Kutty.</p>
-            <p>I'm an Electronics & Communication Engineering student and a developer. Most of my time currently goes into FPGA, RTL design, and figuring out how to make hardware do more with less. I occasionally play table tennis too... :D</p>
+            <p>I'm an Electronics & Communication Engineering student and a developer. Most of my time currently goes into my ongoing projects, FPGA exploration, RTL design, and figuring out how to make hardware do more with less. I occasionally play table tennis too... :D</p>
             <p>You can reach me at <a href="mailto:knithu2005@gmail.com" target="_blank" rel="noopener noreferrer">knithu2005@gmail.com</a> or <a href="mailto:navaneeth2310165@ssn.edu.in" target="_blank" rel="noopener noreferrer">navaneeth2310165@ssn.edu.in</a>.</p>
         </section>
 
@@ -156,22 +156,25 @@
 
                 <li>Currently spending a lot of time around FPGA, RTL, and digital hardware.</li>
 
+                <li>Also exploring higher studies & career options.</li>
+
                 <li>
                     I like working on things that sit somewhere between software and hardware.
                     <details>
                         <summary>[expand]</summary>
                         <div class="expanded-content">
-                            <p>I've been exploring FPGA-based arithmetic and different ways of making hardware implementations accurate, efficient, and reasonably fast.</p>
+                            <p>I've been doing some research on FPGA-based fixed point arithmetic and analyzing the tradeoffs b/w the accuracy, performance and speed.</p>
                         </div>
                     </details>
                 </li>
 
                 <li>
-                    I'm also working on research around fixed-point arithmetic and hardware acceleration.
+                    I'm also working on FPGA and CPU implementations of statistical arbitrage (mean reversion) & Gamma Scalping.
                     <details>
                         <summary>[expand]</summary>
                         <div class="expanded-content">
                             <p>Most of it is just me trying different approaches, comparing what actually works, and seeing how far I can push an idea.</p>
+                            <p>RIght now, its in the build stage and I'm working on it on a regular basis.</p>
                         </div>
                     </details>
                 </li>
@@ -185,7 +188,7 @@
 
             <ul>
                 <li>
-                    I like keeping things simple. If something can be automated or made less annoying, I'll probably try to do it.
+                    I like keeping things simple. Some people call it lazy, but I call it smart.
                 </li>
 
                 <li>
@@ -202,8 +205,82 @@
                 <li><a href="#">Other stuff:</a> open source, random side projects, and occasionally taking table tennis way too seriously.</li>
             </ul>
         </section>
+        
+        <section>
+            <p>Experience:</p>
+
+            <ul>
+                <li>
+                    Cloud & Modern Infrastructure Intern, Atos
+                    <details>
+                        <summary>[expand]</summary>
+                        <div class="expanded-content">
+                            <p>Built a CMDB report analyzing tool which helped engineers to identify discrepancies in automated reports generated from ServiceNow, etc.</p>
+                            <p>Integrated an OTel log collector in multiple existing agents to log traces, metrics, and debug logs securely to Azure LAW ( Log Analytics Workspace) using OTLP endpoints.</p>
+                            <p>Built a central MCP server to expose custom Ansible functions that would perform various custom operations and help to streamline core operations like playbook execution, inventory management, etc.</p>
+                            <p>Explored and deployed various open-source tools for possible applications in both internal and external usecases.</p>
+                        </div>
+                    </details>
+                </li>
+            </ul>
+        </section>
+        <section>
+            <p>Experience:</p>
+
+            <ul>
+                <li>
+                    Comparative Evaluation of Software & FPGA-based Mean Reversion Signal Engine for HFT
+                    <details>
+                        <summary>[expand]</summary>
+                        <div class="expanded-content">
+                            <p>Conducting research on latency and accuracy trade-offs between software implementations (C++, Julia, Python with Numba)
+                                and FPGA acceleration approaches (HLS/RTL) for a BTC-BCH (test) trading pair. Developing optimized market data packet
+                                parsing and low-latency server-to-FPGA streaming pipelines for high-frequency trading systems. (Ongoing)
+                            </p>
+                        </div>
+                    </details>
+                </li>
+                <li>
+                    Ensemble-based Financial Fraud Detection System
+                    <details>
+                        <summary>[expand]</summary>
+                        <div class="expanded-content">
+                            <p>Developed a two-stage machine learning fraud detection framework using XGBoost, LightGBM, and CatBoost, achieving
+                                PR-AUC of 0.97 on the CIS435 dataset and 0.91 on cross-dataset Sparkov evaluation. Engineered features for highly
+                                imbalanced transaction data and implemented ensemble fusion strategies to improve model robustness and reduce
+                                experimentation time by 50%. (Feb ’26)
+                            </p>
+                        </div>
+                    </details>
+                </li>
+                <li>
+                    AFIRGen – AI-powered First Information Report Generator
+                    <details>
+                        <summary>[expand]</summary>
+                        <div class="expanded-content">
+                            <p>Built an LLM-powered legal document generation system by fine-tuning LLaMA 3.1 and Mistral on BNS legal datasets and
+                                30K+ synthetic instruction pairs. Developed a FastAPI-based RAG pipeline integrating OCR, Speech-to-Text, and vector
+                                retrieval, achieving 3–5s inference latency. Deployed on AWS (EC2, SageMaker, IAM) and selected as an Amazon AIdeas
+                                10000 Semi-finalist. (May ’25)
+                            </p>
+                        </div>
+                    </details>
+                </li>
+                <li>
+                    Vallet – Secure Digital Wallet Platform
+                    <details>
+                        <summary>[expand]</summary>
+                        <div class="expanded-content">
+                            <p>Engineered a secure digital wallet backend with encrypted vaults, custom ledger infrastructure, and payment processing
+                                workflows. Implemented concurrent transaction processing using Go routines and context-based cancellation, and deployed
+                                scalable containerized microservices using Docker and Kubernetes. (Jan ’25)
+                            </p>
+                        </div>
+                    </details>
+                </li>
+            </ul>
+        </section>
     </div>
 
 </body>
 </html>
-```
