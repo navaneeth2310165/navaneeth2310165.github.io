@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>navaneeth dot html</title>
+
     <style>
         body {
             font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -119,15 +120,28 @@
         .expanded-content p {
             margin-bottom: 10px;
         }
+
+        /* Last updated */
+        .last-updated {
+            margin-top: 50px;
+            padding-top: 15px;
+            border-top: 1px solid #ccc;
+            color: #888;
+            font-size: 13px;
+            text-align: center;
+        }
     </style>
 </head>
+
 <body>
 
     <div class="container">
+
         <header>
             <h1>NAV.</h1>
             <br>
             <br>
+
             <nav>
                 <a href="https://www.dropbox.com/scl/fo/tpzmlpu025yexr2cnjgbq/ACP7sztNhn3hXgJQ_CLMT1Q?rlkey=0dyl9j5w34fbsggqt60i3def9&st=u31dd6dj&dl=0" target="_blank" rel="noopener noreferrer">Resume</a>
                 <a href="https://www.behance.net/infernoeditz" target="_blank" rel="noopener noreferrer">Behance</a>
@@ -169,12 +183,12 @@
                 </li>
 
                 <li>
-                    I'm also working on FPGA and CPU implementations of statistical arbitrage (mean reversion) & Gamma Scalping.
+                    I'm also working on FPGA implementations of statistical arbitrage (mean reversion) & Gamma Scalping.
                     <details>
                         <summary>[expand]</summary>
                         <div class="expanded-content">
                             <p>Most of it is just me trying different approaches, comparing what actually works, and seeing how far I can push an idea.</p>
-                            <p>RIght now, its in the build stage and I'm working on it on a regular basis.</p>
+                            <p>Right now, its in the build stage and I'm working on it on a regular basis.</p>
                         </div>
                     </details>
                 </li>
@@ -194,6 +208,7 @@
                 <li>
                     I don't have everything figured out. I just like learning, trying things, and seeing where they go.
                 </li>
+
                 <li>
                     I think knowing what not to do is just as useful as knowing what to do.
                 </li>
@@ -208,7 +223,7 @@
                 <li><a href="https://github.com/navaneethkutty" target="_blank" rel="noopener noreferrer">Other stuff:</a> open source, random side projects, and occasionally competing in table tennis tourneys.</li>
             </ul>
         </section>
-        
+
         <section>
             <p>Experience:</p>
 
@@ -227,6 +242,7 @@
                 </li>
             </ul>
         </section>
+
         <section>
             <p>Projects & Papers I've worked on:</p>
 
@@ -236,48 +252,47 @@
                     <details>
                         <summary>[expand]</summary>
                         <div class="expanded-content">
-                            <p>Conducting a comparative study of fixed-point reciprocal computation on FPGAs using Direct LUT, 
-                                LUT with linear interpolation, Newton–Raphson, and Goldschmidt architectures across Q8.24, Q16.16, and Q24.8 formats. 
-                                Evaluating accuracy, resource utilization, timing, latency, and power to characterize algorithm–precision trade-offs and 
-                                identify efficient design configurations for high-performance FPGA arithmetic. (Ongoing)</p>
+                            <p>Conducting a comparative study of fixed-point reciprocal computation on FPGAs using Direct LUT, LUT with linear interpolation, Newton–Raphson, and Goldschmidt architectures across Q8.24, Q16.16, and Q24.8 formats. Evaluating accuracy, resource utilization, timing, latency, and power to characterize algorithm–precision trade-offs and identify efficient design configurations for high-performance FPGA arithmetic. (Ongoing)</p>
                         </div>
                     </details>
                 </li>
+
+                <li>
+                    Comparative Evaluation of Software & FPGA-based Mean Reversion Signal Engine for HFT
+                    <details>
+                        <summary>[expand]</summary>
+                        <div class="expanded-content">
+                            <p>Conducting research on latency and accuracy trade-offs between software implementations (C++, Julia, Python with Numba) and FPGA acceleration approaches (HLS/RTL) for a BTC-BCH (test) trading pair. Developing optimized market data packet parsing and low-latency server-to-FPGA streaming pipelines for high-frequency trading systems. (Ongoing)</p>
+                        </div>
+                    </details>
+                </li>
+
                 <li>
                     Ensemble-based Financial Fraud Detection System
                     <details>
                         <summary>[expand]</summary>
                         <div class="expanded-content">
-                            <p>Developed a two-stage machine learning fraud detection framework using XGBoost, LightGBM, and CatBoost, achieving
-                                PR-AUC of 0.97 on the CIS435 dataset and 0.91 on cross-dataset Sparkov evaluation. Engineered features for highly
-                                imbalanced transaction data and implemented ensemble fusion strategies to improve model robustness and reduce
-                                experimentation time by 50%. (Feb ’26)
-                            </p>
+                            <p>Developed a two-stage machine learning fraud detection framework using XGBoost, LightGBM, and CatBoost, achieving PR-AUC of 0.97 on the CIS435 dataset and 0.91 on cross-dataset Sparkov evaluation. Engineered features for highly imbalanced transaction data and implemented ensemble fusion strategies to improve model robustness and reduce experimentation time by 50%. (Feb ’26)</p>
                         </div>
                     </details>
                 </li>
+
                 <li>
                     AFIRGen – AI-powered First Information Report Generator
                     <details>
                         <summary>[expand]</summary>
                         <div class="expanded-content">
-                            <p>Built an LLM-powered legal document generation system by fine-tuning LLaMA 3.1 and Mistral on BNS legal datasets and
-                                30K+ synthetic instruction pairs. Developed a FastAPI-based RAG pipeline integrating OCR, Speech-to-Text, and vector
-                                retrieval, achieving 3–5s inference latency. Deployed on AWS (EC2, SageMaker, IAM) and selected as an Amazon AIdeas
-                                10000 Semi-finalist. (May ’25)
-                            </p>
+                            <p>Built an LLM-powered legal document generation system by fine-tuning LLaMA 3.1 and Mistral on BNS legal datasets and 30K+ synthetic instruction pairs. Developed a FastAPI-based RAG pipeline integrating OCR, Speech-to-Text, and vector retrieval, achieving 3–5s inference latency. Deployed on AWS (EC2, SageMaker, IAM) and selected as an Amazon AIdeas 10000 Semi-finalist. (May ’25)</p>
                         </div>
                     </details>
                 </li>
+
                 <li>
                     Vallet – Secure Digital Wallet Platform
                     <details>
                         <summary>[expand]</summary>
                         <div class="expanded-content">
-                            <p>Engineered a secure digital wallet backend with encrypted vaults, custom ledger infrastructure, and payment processing
-                                workflows. Implemented concurrent transaction processing using Go routines and context-based cancellation, and deployed
-                                scalable containerized microservices using Docker and Kubernetes. (Jan ’25)
-                            </p>
+                            <p>Engineered a secure digital wallet backend with encrypted vaults, custom ledger infrastructure, and payment processing workflows. Implemented concurrent transaction processing using Go routines and context-based cancellation, and deployed scalable containerized microservices using Docker and Kubernetes. (Jan ’25)</p>
                         </div>
                     </details>
                 </li>
@@ -295,20 +310,30 @@
                 <li>
                     I have represented Tamil Nadu multiple times in National Championships and have won multiple national medals - Gold in Sub Junior boys Doubles and Silver in Sub Junior boys Team in 2019.
                 </li>
+
                 <li>
-                    I was awarded the Government of Tamil Nadu High Cash Incentive for Sports Excellence - 2021 for my Sports performance 
+                    I was awarded the Government of Tamil Nadu High Cash Incentive for Sports Excellence - 2021 for my Sports performance.
                 </li>
+
                 <li>
                     For the AFIRGen project, I was selected to the semifinals in AIdeas10000 hosted by Amazon. (global top 300)
                 </li>
+
                 <li>
                     I am and have been the captain of my college and university TT teams for the past 3 years.
                 </li>
+
                 <li>
                     For my performance, I was awarded Sports and Elite Sports Scholarships in the past 3 years.
                 </li>
             </ul>
         </section>
+
+        <!-- Last updated -->
+        <footer class="last-updated">
+            Last updated: August 30, 2026
+        </footer>
+
     </div>
 
 </body>
