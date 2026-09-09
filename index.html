@@ -122,6 +122,16 @@
             margin-bottom: 10px;
         }
 
+        .secret-link {
+    text-decoration: none;
+}
+        .secret-link:visited {
+            
+    color: #888;
+}
+        .secret-link1:visited {
+    color: #000;
+        }
         /* Last updated */
         .last-updated {
             margin-top: 50px;
@@ -146,7 +156,7 @@ html::-webkit-scrollbar {
     <div class="container">
 
         <header>
-            <h1>NAV.</h1>
+            <h1>NAV<a href="#1" class="secret-link1">.</a></h1>
 
             <nav>
                 <a href="https://www.dropbox.com/scl/fo/tpzmlpu025yexr2cnjgbq/ACP7sztNhn3hXgJQ_CLMT1Q?rlkey=0dyl9j5w34fbsggqt60i3def9&st=u31dd6dj&dl=0" target="_blank" rel="noopener noreferrer">Resume</a>
@@ -155,13 +165,12 @@ html::-webkit-scrollbar {
                 <a href="https://www.linkedin.com/in/navaneethkutty" target="_blank" rel="noopener noreferrer">LinkedIn</a>
                 <a href="https://github.com/navaneethkutty" target="_blank" rel="noopener noreferrer">Github</a>
                 <a href="#" target="_blank" rel="noopener noreferrer">Publications</a>
-                <a href="blogs/index.html">Blogs</a>
             </nav>
         </header>
 
         <br>
 
-        <section>
+        <section id="1">
             <p>Hi! I'm Navaneeth Kutty.</p>
             <p>I'm an Electronics & Communication Engineering student and a developer. Most of my time currently goes into my ongoing projects, FPGA exploration, RTL design, and figuring out how to make hardware do more with less. I occasionally play table tennis too... :D</p>
             <p>You can reach me at <a href="mailto:knithu2005@gmail.com" target="_blank" rel="noopener noreferrer">knithu2005@gmail.com</a> or <a href="mailto:navaneeth2310165@ssn.edu.in" target="_blank" rel="noopener noreferrer">navaneeth2310165@ssn.edu.in</a>.</p>
@@ -184,7 +193,7 @@ html::-webkit-scrollbar {
                     <details>
                         <summary>[expand]</summary>
                         <div class="expanded-content">
-                            <p>I've been doing some research on FPGA-based fixed point arithmetic and analyzing the tradeoffs b/w the accuracy, performance and speed.</p>
+                            <p>I've been doing some research on FPGA fixed point arithmetic .</p>
                         </div>
                     </details>
                 </li>
@@ -259,13 +268,13 @@ html::-webkit-scrollbar {
                     <details>
                         <summary>[expand]</summary>
                         <div class="expanded-content">
-                            <p>Conducting a comparative study of fixed-point reciprocal computation on FPGAs using Direct LUT, LUT with linear interpolation, Newton–Raphson, and Goldschmidt architectures across Q8.24, Q16.16, and Q24.8 formats. Evaluating accuracy, resource utilization, timing, latency, and power to characterize algorithm–precision trade-offs and identify efficient design configurations for high-performance FPGA arithmetic. (Ongoing)</p>
+                            <p>Conducting a comparative study of fixed-point reciprocal computation on FPGAs using Direct LUT, LUT with linear interpolation, Newton–Raphson, Goldschmidt, and Hybrid (Linear Interpolation + 1 NR iteration) architectures across Q8.24 & Q16.16 formats. Evaluating accuracy, resource utilization, timing, latency, and power to characterize algorithm–precision trade-offs and identify efficient design configurations for high-performance FPGA arithmetic. (Ongoing)</p>
                         </div>
                     </details>
                 </li>
 
                 <li>
-                    Comparative Evaluation of Software & FPGA-based Mean Reversion Signal Engine for HFT
+                    Comparative Evaluation of Software & FPGA-based Mean Reversion Signal Engine for HFT Systems
                     <details>
                         <summary>[expand]</summary>
                         <div class="expanded-content">
@@ -338,7 +347,9 @@ html::-webkit-scrollbar {
 
         <!-- Last updated -->
         <footer class="last-updated">
+            <a href="blogs/index.html" class="secret-link">
             Last updated: September 9, 2026
+            </a>
         </footer>
 
     </div>
